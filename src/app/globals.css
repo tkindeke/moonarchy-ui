@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Multiple font format for cross browser compatibility
+   font-display: swap (Enables browser to swap in the custom font as soon as it's available)
+*/
+@font-face {
+  font-family: "Inria Sans";
+  src:
+    url("/fonts/InriaSans-Bold.woff2") format("woff2"),
+    url("/fonts/InriaSans-Bold.woff") format("woff"),
+    url("/fonts/InriaSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inria Sans";
+  src:
+    url("/fonts/InriaSans-BoldItalic.woff2") format("woff2"),
+    url("/fonts/InriaSans-BoldItalic.woff") format("woff"),
+    url("/fonts/InriaSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inria Sans";
+  src:
+    url("/fonts/InriaSans-Italic.woff2") format("woff2"),
+    url("/fonts/InriaSans-Italic.woff") format("woff"),
+    url("/fonts/InriaSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inria Sans";
+  src:
+    url("/fonts/InriaSans-Light.woff2") format("woff2"),
+    url("/fonts/InriaSans-Light.woff") format("woff"),
+    url("/fonts/InriaSans-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inria Sans";
+  src:
+    url("/fonts/InriaSans-LightItalic.woff2") format("woff2"),
+    url("/fonts/InriaSans-LightItalic.woff") format("woff"),
+    url("/fonts/InriaSans-LightItalic.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inria Sans";
+  src:
+    url("/fonts/InriaSans-Regular.woff2") format("woff2"),
+    url("/fonts/InriaSans-Regular.woff") format("woff"),
+    url("/fonts/InriaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inria Sans";
+}
+
+/* globals.css */
+/* body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inria Sans";
+} */
+
+/* .bg-gradient-to-t {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+} */
+
+footer {
+  margin-top: auto;
+  /* width: 100%; */
+}
