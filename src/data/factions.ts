@@ -9,7 +9,7 @@ export const factions = [
   {
     id: "faction2",
     name: "Crimsons",
-    icon: "/icons/Faction_2_Neutral.png",
+    icon: "/icons/Faction_2_neutral.png",
     iconSelect: "/icons/Faction_2.png",
     color: "#FF3A3A",
   },
